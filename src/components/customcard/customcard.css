@@ -1,0 +1,112 @@
+.cardout{
+    border-radius: 10px;
+cursor: pointer;
+background: #ebedee;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #fdfbfb, #ebedee);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #fdfbfb, #ebedee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+overflow: hidden;
+float: left;
+/* height:600px;
+overflow-y:scroll;
+transition-duration: 0.3s; */
+}
+
+/* .cardout:hover{
+    transition-duration: 0.5s;
+    height: 100%;
+} */
+.cardcontent{
+    text-align: center;
+}
+
+
+.cardtitle{
+    text-transform: capitalize;
+    color: black;
+}
+
+.cardimg{
+    
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:inherit;
+    overflow: hidden;
+    transform: scale(1);
+    transition-duration: 0.2s;
+}
+
+.tumbnail {
+    flex-shrink: 0;
+    max-width: 100%;
+    min-width: 100%;
+    /* min-height: 100%; */
+    transform: scale(1);
+    transition-duration: 0.2s;
+
+   } 
+
+
+.cardout:hover  .cardimg .tumbnail{
+    transform: scale(1.2);
+    transform-style: preserve-3d;
+    transition-duration: 0.5s;
+    
+}
+.cardbutton{
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    background: #000000;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    transform: translate(0,100px);
+    -webkit-transform: translate(0,100px);
+    -o-transform: translate(0,100px);
+    -moz-transform: translate(0,100px);
+    padding: 20px 0px;
+    transition-duration: 0.5s;
+}
+.cardout:hover  .cardbutton {
+    transition-duration: 0.5s;
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px);
+    -moz-transform: translate(0,0px);
+    visibility: visible;
+}
+
+.expandcard{
+
+    margin-top: calc(-50vw + 50%);
+    z-index: 100 !important;
+    
+}
+.blackout{
+    width: 100vw !important;
+    height: 100vh !important;
+    position:fixed !important;
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+z-index: 10;
+}
+
+
+.description{
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em; /* (Number of lines you want visible) * (line-height) */
+    line-height: 1.2em;
+    text-align:justify;
+    font-size: 1rem;
+    margin: 15px;
+    
+}

@@ -1,0 +1,225 @@
+.expand-cardout{
+    display: grid;
+    justify-items: center;
+    background: #e2ebf0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cfd9df, #e2ebf0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cfd9df, #e2ebf0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   border-radius: 10px;
+   margin-top:5vh;
+   margin-left: 5vw;
+   width: 90vw;
+   height: 90vh;
+   overflow-y: auto;
+
+   position: fixed;
+   z-index: 100;
+   }
+   .expand-cardcontent{
+       text-align: center;
+   }
+   
+   
+   .expand-cardtitle{
+       text-transform: capitalize;
+       color: black;
+   }
+   
+   .expand-cardimg{
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width:100%;
+       transform: scale(1);
+       transition-duration: 0.2s;
+   }
+   
+   .expand-tumbnail 
+   {
+    position: sticky;
+    flex-shrink: 0;
+    max-width: 100%;
+    min-width: 100%;
+    /* max-height: 100vh; */
+    transform: scale(1);
+    
+   } 
+
+/* 
+.expand-cardout:hover  .expand-cardimg .expand-tumbnail{
+    transform: scale(1.2);
+    transform-style: preserve-3d;
+    transition-duration: 0.2s;
+    
+} */
+
+.expand-description
+{
+    text-align: left;
+    margin: 20px;
+}
+.comments{
+    color: white;
+    background: #000000;  /* fallback for old browsers */
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.comments-title{
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.comment{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: #e0e0e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e0e0e0, #d3def5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e0e0e0, #d3def5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    border-radius: 10px;
+    max-width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+    margin: 10px 5vw;
+    color: black;
+}
+.comment-text{
+    padding-top:20px;
+    text-align: left;
+    font-size: inherit;
+    
+}
+.comment-from{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+.comment-time{
+    font-weight: normal;
+    font-size: 10px;
+    padding: 0px;
+    margin:0px;    
+    text-align: left !important;
+
+}
+
+.close-button{
+    position: fixed;
+    z-index: 200;
+    left: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+ 
+}
+.close-button img{
+    position: fixed!important;
+    margin: 0px;
+    padding: 0px;
+    max-width: 25px;
+    transition-duration: 0.2s;
+}
+
+.close-button:hover img{
+    filter: invert(200%);
+    transition-duration: 0.2s;
+}
+
+
+
+/* checkbox css this is not my own and usd from external sources */
+
+.check {
+
+    transform: scale(2);
+	position: relative;
+	background: linear-gradient(90deg, #f19af3, #f099b5);
+	line-height: 0;
+	perspective: 400px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after,
+.check {
+	appearance: none;
+	display: inline-block;
+	border-radius: 1rem;
+	border: 0;
+	transition: .35s ease-in-out;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.check label {
+	width: 2.2rem;
+	height: 1rem;
+	background: #d7d7d7;
+	overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+	position: absolute;
+	z-index: 1;
+	width: .8rem;
+	height: .8rem;
+	top: -.05rem;
+	left: .1rem;
+	background: linear-gradient(45deg, #dedede, #ffffff);
+	box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+	left: 1.1rem;
+}
+
+.check input[type="checkbox"]:checked + label {
+	background: transparent;
+}
+
+.check label::before,
+.check label::after {
+	content: "· ·";
+	position: absolute;
+	overflow: hidden;
+	left: .15rem;
+	top: .5rem;
+	height: 1rem;
+	letter-spacing: -.04rem;
+	color: #9b9b9b;
+	font-family: "Times New Roman", serif;
+	z-index: 2;
+	font-size: .6rem;
+	border-radius: 0;
+	transform-origin: 0 0 -.5rem;
+	backface-visibility: hidden;
+}
+
+.check label::after {
+	content: "●";
+	top: .65rem;
+	left: .3rem;
+	height: .1rem;
+	width: .35rem;
+	font-size: .2rem;
+	transform-origin: 0 0 -.4rem;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+	left: 1.55rem;
+	top: .4rem;
+	line-height: .1rem;
+	transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+	height: .16rem;
+	top: .55rem;
+	left: 1.6rem;
+	font-size: .6rem;
+	line-height: 0;
+}
+

@@ -1,0 +1,27 @@
+body {
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #c3cfe2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.expandcard{
+  position: fixed;
+ top:0px;
+ left: 0px;
+}
+.title,.nav{
+  top: -10px;
+}
+
+.expandcard .card-close{
+  position: fixed;
+}
+
+.expandcard .close-button img{
+  position: fixed;
+  top:0px;
+  left: 0px;
+}

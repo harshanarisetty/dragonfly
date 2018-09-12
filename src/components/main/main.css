@@ -1,0 +1,39 @@
+.nav{
+    width: 100vw;
+    background: #2a5298;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1e3c72, #2a5298);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.title{
+    
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.cards{
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .cards {
+        transition:width 1s ease-in-out;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .cards {
+        transition:width 1s ease-in-out;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+}
+
