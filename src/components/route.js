@@ -9,14 +9,9 @@ export default class Routes extends Component {
       
          <Router>
             <Switch>
-            {/* <Route exact path='/' component={App}/> */}
             <Route exact path='/' component={Main}/>
             <Route exact path='/offline' component={offline}/>
             <Route exact path='/loader' component={Loader}/>
-            {/* <Route exact path='/ourservices' component={OurServices}/>
-            <Route exact path='/adoption' component={AdoptionCenter}/>
-            <Route exact path='/contactus' component={ContactUs}/>
-            <Route exact path='/book' component={Book}/> */}
             </Switch>
         </Router>
 

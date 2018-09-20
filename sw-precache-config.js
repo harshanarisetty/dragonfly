@@ -5,6 +5,5 @@ module.exports = {
     ],
     swFilePath: './build/service-worker.js',
     stripPrefix: 'build/',
-    // importScripts: (['./sw.js','./sw-toolbox.js']),
     handleFetch: false
   }
